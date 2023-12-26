@@ -1,5 +1,9 @@
 {
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
+    "chart.js": "^4.4.1",
     "pnotify": "^5.2.0"
   },
   "devDependencies": {
