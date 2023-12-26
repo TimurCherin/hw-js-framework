@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "pnotify": "^5.2.0"
+  },
+  "devDependencies": {
+    "@pnotify/core": "^5.2.0"
   }
 }
