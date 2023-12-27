@@ -41,6 +41,7 @@ function start() {
 // import Chart from './node_modules/chart.js';
 console.log(Chart)
 const stats = document.querySelector("#sales-chart")
+const newStats = document.querySelector("#new-sales-chart")
 const chartData = {
 labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30'],
 datasets: [{
@@ -56,7 +57,16 @@ type: 'line',
 data: chartData,
 options: {}
 };
+const newConfig = {
+type: 'bar',
+data: chartData,
+options: {}
+};
 const salesChart = new Chart(
 stats,
 config
+);
+const newSalesChart = new Chart(
+newStats,
+newConfig
 );
